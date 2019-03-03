@@ -1,8 +1,8 @@
 {
-  "ali_AccessKeyId" : "LTAIrPEaKS2qByfv" ,
-  "ali_AccessKeySecret" : "sfwXfusratcZPIW34HuwSzlYV91Qcl" ,
-  "aws_access_key_id" : "AKIAPHWRNO5OEKWZRGOA" ,
-  "aws_secret_access_key" : "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",
+  "ali_AccessKeyId" : "" ,
+  "ali_AccessKeySecret" : "" ,
+  "aws_access_key_id" : "" ,
+  "aws_secret_access_key" : "",
   "source_bucket_ali" : "seimutig" ,
   "source_bucket_aws" : "seimutig" ,
   "target_bucket_aws" : "mia"
