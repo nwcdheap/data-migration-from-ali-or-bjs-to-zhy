@@ -29,7 +29,7 @@ client = aws_session.client('sqs')
 
 #queue=sqs.get_queue_by_name(QueueName="bucket_migration_0"+ str(random.randint(1, 5)))
 
-auth =oss2.Auth('LTAIrPEaKS2qByfv','sfwXfusratcZPIW34HuwSzlYV91Qcl')
+auth =oss2.Auth('','')
 bucket=oss2.Bucket(auth,'http://oss-cn-hangzhou.aliyuncs.com','seimutig')
 
 s3 = boto3.resource('s3')

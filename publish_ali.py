@@ -25,7 +25,7 @@ aws_session=boto3.session.Session(aws_access_key_id=config['aws_access_key_id'],
 
 sqs = aws_session.resource('sqs')
 
-auth =oss2.Auth('LTAIrPEaKS2qByfv','sfwXfusratcZPIW34HuwSzlYV91Qcl')
+auth =oss2.Auth('','')
 firstbucket=oss2.Bucket(auth,'http://oss-cn-hangzhou.aliyuncs.com','seimutig')
 
 
