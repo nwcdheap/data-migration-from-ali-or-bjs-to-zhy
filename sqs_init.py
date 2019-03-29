@@ -39,7 +39,3 @@ for i in range(1, 6):
                         'deadLetterTargetArn': dead_queue_arn,
                         'maxReceiveCount': '3'
                         })})
-
-
-
-

@@ -102,5 +102,3 @@ while True:
 
 #print(len(json.loads(response['Messages'][0]['Body'])['KEYS']))
 #print(json.loads(response['Messages'][0]['Body'])['KEYS'])
-
-

@@ -71,8 +71,8 @@ for n in mia2:
         "SOURCE_BUCKET": config['source_bucket_ali'],
         "TARGET_BUCKET": config['target_bucket_aws'],
         "KEYS": n}
-    #queue=sqs.get_queue_by_name(QueueName="bucket_migration_0"+ str(random.randint(1, 5)))
-    queue = sqs.get_queue_by_name(QueueName="bucket_migration_0" + str(4))
+    queue=sqs.get_queue_by_name(QueueName="bucket_migration_0"+ str(random.randint(1, 5)))
+    #queue = sqs.get_queue_by_name(QueueName="bucket_migration_0" + str(4))
     response = queue.send_message(MessageBody=json.dumps(Message))
     print(response.get('MessageId'))
 
@@ -83,9 +83,3 @@ for n in mia2:
 #print(next(mia))
 
 #print(next(mia))
-
-
-
-
-
-

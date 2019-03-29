@@ -63,6 +63,3 @@ while True:
 
     else:
         logging.info('no message')
-
-
-

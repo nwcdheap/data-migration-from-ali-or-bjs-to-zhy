@@ -52,9 +52,7 @@ for i in range(0,len(msg),3):
         "TARGET_BUCKET": config['target_bucket_aws'],
         "KEYS": message }
 
-    queue = sqs.get_queue_by_name(QueueName="bucket_migration_0" + str(4))
-    #queue=sqs.get_queue_by_name(QueueName="bucket_migration_0"+ str(random.randint(1, 5)))
+    #queue = sqs.get_queue_by_name(QueueName="bucket_migration_0" + str(4))
+    queue=sqs.get_queue_by_name(QueueName="bucket_migration_0"+ str(random.randint(1, 5)))
     response = queue.send_message(MessageBody=json.dumps(Message))
     print(response.get('MessageId'))
-
-
