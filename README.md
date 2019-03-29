@@ -44,7 +44,7 @@ pip3 install oss2 boto3
 
 - 使用当前文件夹下的Dockerfile构建worker1镜像. 重复上条步骤，依次构建worker2/3/4/5/dead镜像（如果您有5个队列和1个死信队列的话）。
 
-- 现在，您可以根据实际情况，选择使用swarm,kubernetes等容器编排引擎组织并启动您的容器们了。比如，你可以启动101个docker，其中20个使用worker1的image，20个使用worker2的image，20个使用worker3的image，20个使用worker4的image，20个使用worker5的image，1个使用workerdead的image。    
+- 现在，您可以根据实际情况，选择使用ECS,swarm,kubernetes等容器编排引擎组织并启动您的容器们了。比如，你可以启动101个docker，其中20个使用worker1的image，20个使用worker2的image，20个使用worker3的image，20个使用worker4的image，20个使用worker5的image，1个使用workerdead的image。    
 
 7. 当所有队列（包括死信队列）里面的消息都为空时，表示数据迁移完成。
 
@@ -79,7 +79,7 @@ pip3 install  boto3
 - 修改当前文件夹下的dockerfile，将最后一行 worker_ali_to_aws 改为 worker_aws_to_aws。 </br>
 - 使用当前文件夹下的Dockerfile构建worker1镜像. 重复上条步骤，依次构建worker2/3/4/5/dead镜像（如果您有5个队列和1个死信队列的话）。
 
-- 现在，您可以根据实际情况，选择使用swarm,kubernetes等容器编排引擎组织并启动您的容器们了。比如，你可以启动101个docker，其中20个使用worker1的image，20个使用worker2的image，20个使用worker3的image，20个使用worker4的image，20个使用worker5的image，1个使用workerdead的image。
+- 现在，您可以根据实际情况，选择使用ECS,swarm,kubernetes等容器编排引擎组织并启动您的容器们了。比如，你可以启动101个docker，其中20个使用worker1的image，20个使用worker2的image，20个使用worker3的image，20个使用worker4的image，20个使用worker5的image，1个使用workerdead的image。
 
 7. 当所有队列（包括死信队列）里面的消息都为空时，表示数据迁移完成。
 
