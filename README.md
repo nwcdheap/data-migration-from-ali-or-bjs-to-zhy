@@ -89,7 +89,7 @@ pip3 install  boto3
 - aws区域间迁移不在本地落盘，因此无需为worker预留太多的instance store空间。
 
 ## todo-list
-   -增加Kubernets快速启动模板。  
+   -增加Kubernetes快速启动模板。  
    -优化log输出。  
    -通过客户的使用反馈，进一步封装，便于客户快速上手。  
    
